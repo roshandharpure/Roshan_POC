@@ -6,7 +6,8 @@ target 'Roshan_POC' do
   use_frameworks!
   # Pods for Roshan_POC
   pod 'Alamofire'
-  
+  pod 'SVProgressHUD'
+  pod 'PINRemoteImage'
   target 'Roshan_POCTests' do
     inherit! :search_paths
     # Pods for testing

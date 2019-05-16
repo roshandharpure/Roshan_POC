@@ -29,12 +29,32 @@ class CountryView: UIViewController {
     func setupViews(){
         view.backgroundColor = UIColor.white
         tableView = UITableView.init(frame: view.frame)
+        tableView?.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView?.rowHeight = UITableViewAutomaticDimension
-        tableView?.estimatedRowHeight = 200
+        tableView?.estimatedRowHeight = 44.0
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
         tableView?.register(DetailCell.self, forCellReuseIdentifier:DETAIL_CELL)
+        setupLayout()
+    }
+    
+    func setupLayout(){
+        tableView?.translatesAutoresizingMaskIntoConstraints = false
+        if #available(iOS 11.0, *) {
+            tableView?.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true
+            tableView?.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant:5).isActive = true
+            tableView?.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
+            tableView?.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: 5).isActive = true
+        } else {
+            // Fallback on earlier version
+            tableView?.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 5).isActive = true
+            tableView?.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant:5).isActive = true
+            tableView?.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 5).isActive = true
+            tableView?.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: 5).isActive = true
+        }
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,13 +62,14 @@ class CountryView: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        countryViewModel?.fetchCountryDetails(completionHandler: { (countryData, error) in
+        
+        CountryViewModel.fetchCountryDetails(completionHandler: { (countryData, error) in
             if let _ = error{
                 return
             }
             guard let countryData = countryData else{return}
             self.countryData = countryData
-            
+
         })
     }
     
