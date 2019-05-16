@@ -9,13 +9,13 @@
 import UIKit
 
 extension CountryView:UITableViewDataSource,UITableViewDelegate {
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return countryViewModel?.details?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countryViewModel?.details?.count ?? 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -28,19 +28,17 @@ extension CountryView:UITableViewDataSource,UITableViewDelegate {
         return footerView
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var detailCell:DetailCell? = tableView.dequeueReusableCell(withIdentifier: DETAIL_CELL, for: indexPath) as? DetailCell
         
         if detailCell == nil {
             detailCell = DetailCell.init(style: .default, reuseIdentifier: DETAIL_CELL)
         }
-        let details = countryViewModel?.details![indexPath.row]
-        
+        let details = countryViewModel?.details![indexPath.section]
         detailCell?.lblTitle.text = details?.title ?? "NA"
         detailCell?.lblDescription.text = details?.description ?? "NA"
         detailCell?.imgRefrenceView.image = UIImage.init(named: PLACEHOLDER_IMAGE)
-        
+        detailCell?.layoutIfNeeded()
         //Download Image asynchronously
         if let imgRefUrl = details?.imageHref{
             detailCell?.imgRefrenceView.pin_updateWithProgress = true
