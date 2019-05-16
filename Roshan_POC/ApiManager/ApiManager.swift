@@ -38,7 +38,8 @@ class ApiManager: NSObject{
                 
             case .failure(let error):
                 completion(nil,error)
-                SVProgressHUD.show(withStatus: "Request Failed")
+                SVProgressHUD.showError(withStatus: "Request Failed")
+                //show(withStatus: "Request Failed")
             }
         }
        

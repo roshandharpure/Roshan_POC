@@ -24,7 +24,7 @@ class CountryViewModel: NSObject {
     }
     
     class func fetchCountryDetails(completionHandler: @escaping (Country?,Error?)->Void ){
-        ApiManager.shared.getData(with:URL) { (countryData, error) in
+        ApiManager.shared.getData(with:APP_URL) { (countryData, error) in
             completionHandler(countryData, error)
         }
         

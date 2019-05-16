@@ -8,6 +8,7 @@ target 'Roshan_POC' do
   pod 'Alamofire'
   pod 'SVProgressHUD'
   pod 'PINRemoteImage'
+  
   target 'Roshan_POCTests' do
     inherit! :search_paths
     # Pods for testing
