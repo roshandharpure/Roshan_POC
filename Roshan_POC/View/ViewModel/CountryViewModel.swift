@@ -9,24 +9,17 @@
 import UIKit
 
 class CountryViewModel: NSObject {
-    var countryData:Country?
-    
-    var title:String?{
+    var countryData: Country?
+    var title: String? {
         return countryData?.title
     }
-    
-    var details:[CountryDetails]?{
+
+    var details: [CountryDetails]? {
         return countryData?.details
     }
-    
-    init(country:Country?) {
+
+    init(country: Country?) {
         self.countryData = country
     }
-    
-    class func fetchCountryDetails(completionHandler: @escaping (Country?,Error?)->Void ){
-        ApiManager.shared.getData(with:APP_URL) { (countryData, error) in
-            completionHandler(countryData, error)
-        }
-        
-    }
+
 }

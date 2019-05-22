@@ -9,8 +9,8 @@
 import Foundation
 
 //TableViewCell
-let DETAIL_CELL = "DetailCell"
-let PLACEHOLDER_IMAGE = "PlaceholderImg"
+let detailCellId = "DetailCell"
+let placeholderImage = "PlaceholderImg"
 
 //API
-let APP_URL = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"
+let appUrl = "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json"

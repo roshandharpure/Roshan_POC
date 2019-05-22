@@ -10,6 +10,7 @@
 		05668D499677C1A8FFDC8B3B /* Pods_Roshan_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE9CF90E6DFB195DF2844D /* Pods_Roshan_POC.framework */; };
 		1FA0370967B7324D0920AE37 /* Pods_Roshan_POCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BD6EECF00574FE83E9A9A9 /* Pods_Roshan_POCUITests.framework */; };
 		4D5E35E540184189CC4382CA /* Pods_Roshan_POCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C963AB80DFBB8FC0047F848D /* Pods_Roshan_POCTests.framework */; };
+		F40F0B36229514D300DAF033 /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F0B35229514D300DAF033 /* CountryDetailViewModel.swift */; };
 		F411BCCE228D38C800C4D7FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411BCCD228D38C800C4D7FC /* AppDelegate.swift */; };
 		F411BCD5228D38C800C4D7FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F411BCD4228D38C800C4D7FC /* Assets.xcassets */; };
 		F411BCE3228D38C800C4D7FC /* Roshan_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F411BCE2228D38C800C4D7FC /* Roshan_POCTests.swift */; };
@@ -51,6 +52,7 @@
 		A4BD6EECF00574FE83E9A9A9 /* Pods_Roshan_POCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roshan_POCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C187F8707251C8C6F14CDF14 /* Pods-Roshan_POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roshan_POC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Roshan_POC/Pods-Roshan_POC.debug.xcconfig"; sourceTree = "<group>"; };
 		C963AB80DFBB8FC0047F848D /* Pods_Roshan_POCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Roshan_POCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40F0B35229514D300DAF033 /* CountryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewModel.swift; sourceTree = "<group>"; };
 		F411BCCA228D38C800C4D7FC /* Roshan_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshan_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F411BCCD228D38C800C4D7FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F411BCD4228D38C800C4D7FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				F411BD0D228D458300C4D7FC /* CountryViewModel.swift */,
+				F40F0B35229514D300DAF033 /* CountryDetailViewModel.swift */,
 			);
 			name = ViewModel;
 			path = View/ViewModel;
@@ -236,6 +239,7 @@
 				F411BCC8228D38C800C4D7FC /* Resources */,
 				C399DA078114F75C596D5B7D /* [CP] Embed Pods Frameworks */,
 				BB0341ED2B54627B956B6C5B /* [CP] Copy Pods Resources */,
+				F4060F1922954D7800DE146C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -515,6 +519,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Roshan_POCTests/Pods-Roshan_POCTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F4060F1922954D7800DE146C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -528,6 +545,7 @@
 				F411BD10228D489200C4D7FC /* CountryView+Extension+TableViewDelegate.swift in Sources */,
 				F411BD14228D4C8600C4D7FC /* AppConstants.swift in Sources */,
 				F411BD0E228D458300C4D7FC /* CountryViewModel.swift in Sources */,
+				F40F0B36229514D300DAF033 /* CountryDetailViewModel.swift in Sources */,
 				F411BCFD228D3C9600C4D7FC /* Country.swift in Sources */,
 				F411BD12228D4A6200C4D7FC /* DetailCell.swift in Sources */,
 				F411BCCE228D38C800C4D7FC /* AppDelegate.swift in Sources */,

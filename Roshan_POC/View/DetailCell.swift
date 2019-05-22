@@ -9,84 +9,100 @@
 import UIKit
 
 class DetailCell: UITableViewCell {
-    var lblTitle:UILabel!
-    var lblDescription:UILabel!
+    var contentBackgroundView: UIView!
+    var lblTitle: UILabel!
+    var lblDescription: UILabel!
     var imgRefrenceView: UIImageView!
-    var cardView:UIView?
-    
+    var cardView: UIView?
+    var countryDetailViewModel: CountryDetailViewModel? {
+        didSet {
+            lblTitle.text = countryDetailViewModel?.titleText
+            lblDescription.attributedText = countryDetailViewModel?.descriptionText
+            imgRefrenceView.pin_updateWithProgress = true
+            imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: placeholderImage))
+            if let url = countryDetailViewModel?.imageUrl {
+                imgRefrenceView.pin_setImage(from: url, completion: { (result) in
+                    self.layoutIfNeeded()
+                })
+            }
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        // setupSubviews()
     }
-    
+
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupSubviews()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func setupSubviews(){
-        
+
+    func setupSubviews() {
+
+        //Content Background View
+        contentBackgroundView = UIView.init(frame: .zero)
+        contentView.addSubview(contentBackgroundView)
+
         //Title Label
-        lblTitle = UILabel(frame: contentView.bounds)
+        lblTitle = UILabel(frame: .zero)
         lblTitle.font = UIFont.boldSystemFont(ofSize: 22.0)
         lblTitle.textColor = UIColor.black
         lblTitle.numberOfLines = 0
         lblTitle.clipsToBounds = true
-        contentView.addSubview(lblTitle)
-        
-        // ImageView
-        imgRefrenceView = UIImageView.init(frame: contentView.bounds)
+        contentBackgroundView.addSubview(lblTitle)
+
+        //ImageView
+        imgRefrenceView = UIImageView.init(frame: .zero)
         imgRefrenceView.clipsToBounds = true
-        imgRefrenceView?.contentMode = .scaleAspectFill
-        imgRefrenceView?.image = UIImage.init(named:PLACEHOLDER_IMAGE)
-        contentView.addSubview(imgRefrenceView)
-        
+        imgRefrenceView?.contentMode = .scaleAspectFit
+        imgRefrenceView?.image = UIImage.init(named: placeholderImage)
+        contentBackgroundView.addSubview(imgRefrenceView)
+
         //Description Label
-        lblDescription = UILabel(frame: contentView.bounds)
+        lblDescription = UILabel(frame: .zero)
         lblDescription.clipsToBounds = true
-        lblDescription.font = UIFont.systemFont(ofSize: 17.0)
-        lblDescription.textColor = UIColor.lightGray
         lblDescription.numberOfLines = 0
-        contentView.addSubview(lblDescription)
+        contentBackgroundView.addSubview(lblDescription)
         self.setupLayout()
-        
-        
+
     }
-    
-    func setupLayout(){
-        // Add constraints for self sizing the cells
-        NSLayoutConstraint.activate([
-            lblTitle.heightAnchor.constraint(equalToConstant: 50.0),
-            lblTitle.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 10.0),
-            lblTitle.bottomAnchor.constraint(equalTo: self.imgRefrenceView.topAnchor, constant: 10.0),
-            lblTitle.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 0.0),
-            lblTitle.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 10.0),
-            
-            imgRefrenceView.leadingAnchor.constraint(equalTo: lblTitle.leadingAnchor),
-            imgRefrenceView.trailingAnchor.constraint(equalTo: lblTitle.trailingAnchor),
-            imgRefrenceView.heightAnchor.constraint(equalToConstant: self.contentView.frame.width),
-            imgRefrenceView.bottomAnchor.constraint(equalTo: self.lblDescription.topAnchor, constant: 10.0),
-            
-            lblDescription.leadingAnchor.constraint(equalTo: lblTitle.leadingAnchor),
-            lblDescription.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
-            lblDescription.heightAnchor.constraint(greaterThanOrEqualToConstant: 170),
-            lblDescription.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 10.0),
-            ])
-        
-        //Disable Autosizing mask
+
+    func setupLayout() {
+
+        //Disable Autoresizing mask
+        contentBackgroundView.translatesAutoresizingMaskIntoConstraints = false
         lblTitle.translatesAutoresizingMaskIntoConstraints = false
         lblDescription.translatesAutoresizingMaskIntoConstraints = false
         imgRefrenceView.translatesAutoresizingMaskIntoConstraints = false
-        
-    }
-    
-    override func layoutSubviews() {
-        self.setupLayout()
+
+        // Add constraints for self sizing the cells
+        NSLayoutConstraint.activate([
+            contentBackgroundView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 5.0),
+            contentBackgroundView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -5.0),
+            contentBackgroundView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 5.0),
+            contentBackgroundView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -5.0),
+
+            lblTitle.heightAnchor.constraint(equalToConstant: 30.0),
+
+            lblTitle.topAnchor.constraint(equalTo: contentBackgroundView.topAnchor, constant: 5.0),
+            lblTitle.bottomAnchor.constraint(equalTo: self.imgRefrenceView.topAnchor, constant: -10.0),
+            lblTitle.leadingAnchor.constraint(equalTo: contentBackgroundView.leadingAnchor, constant: 0.0),
+            lblTitle.trailingAnchor.constraint(equalTo: contentBackgroundView.trailingAnchor, constant: 0.0),
+
+            imgRefrenceView.leadingAnchor.constraint(equalTo: lblTitle.leadingAnchor),
+            imgRefrenceView.trailingAnchor.constraint(equalTo: lblTitle.trailingAnchor),
+            imgRefrenceView.bottomAnchor.constraint(equalTo: self.lblDescription.topAnchor, constant: -10.0),
+
+            lblDescription.leadingAnchor.constraint(equalTo: lblTitle.leadingAnchor),
+            lblDescription.trailingAnchor.constraint(equalTo: lblTitle.trailingAnchor),
+
+            lblDescription.bottomAnchor.constraint(equalTo: contentBackgroundView.bottomAnchor, constant: -10.0),
+            ])
+
     }
 
 }

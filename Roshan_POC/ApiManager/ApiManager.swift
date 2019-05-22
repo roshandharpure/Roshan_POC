@@ -10,40 +10,36 @@ import Foundation
 import Alamofire
 import SVProgressHUD
 
-class ApiManager: NSObject{
-    
+class ApiManager: NSObject {
+
     static let shared = ApiManager()
-    
-    func getData(with url:String, completion:@escaping (_ data:Country?, _ error:Error?)-> Void){
-        SVProgressHUD.show()
+
+    func getData(with url: String, completion:@escaping (_ data: Country?, _ error: Error?)-> Void) {
+
         Alamofire.request(url).responseData { (responseData) in
             SVProgressHUD.dismiss()
-            switch responseData.result{
+            switch responseData.result {
             case .success(let data):
-                
+
                     //Apply string encoding as response is not UTF 8 formatted
                     if let string = String(decoding: data, as: UTF8.self) as? String,
-                        let datastr = string.data(using: String.Encoding.utf8){
+                        let datastr = string.data(using: String.Encoding.utf8) {
                         //Map response data into model
-                        do{
+                        do {
                             let countryData = try JSONDecoder().decode(Country.self, from: datastr)
-                            print(countryData.title ?? "")
-                            completion(countryData,nil)
-                          }catch let error as NSError {
+                            completion(countryData, nil)
+                          } catch let error as NSError {
                             print(error)
-                            completion(nil,error)
+                            completion(nil, error)
                          }
-                        
-                    }
-                
+
+                }
             case .failure(let error):
-                completion(nil,error)
+                completion(nil, error)
                 SVProgressHUD.showError(withStatus: "Request Failed")
-                //show(withStatus: "Request Failed")
             }
         }
-       
+
     }
-    
-    
+
 }

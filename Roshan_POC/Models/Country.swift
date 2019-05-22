@@ -8,13 +8,11 @@
 
 import Foundation
 
-struct Country : Codable {
-    var title:String?
-    var details:[CountryDetails]?
-    
-    enum CodingKeys : String,CodingKey{
+struct Country: Codable {
+    var title: String?
+    var details: [CountryDetails]?
+    enum CodingKeys: String, CodingKey {
         case title
         case details = "rows"
     }
-    
 }

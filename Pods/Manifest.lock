@@ -10,11 +10,13 @@ PODS:
     - FLAnimatedImage (>= 1.0)
     - PINRemoteImage/Core
   - SVProgressHUD (2.2.3)
+  - SwiftLint (0.25.0)
 
 DEPENDENCIES:
   - Alamofire
   - PINRemoteImage
   - SVProgressHUD
+  - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -22,7 +24,8 @@ SPEC CHECKSUMS:
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   SVProgressHUD: a5eaeff664a82dda89809c409ace40183ce91523
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
 
-PODFILE CHECKSUM: 7cf2ef91dc913c2003bc318ac348ba22e5071dd4
+PODFILE CHECKSUM: 997a311e6731fc1ca3ad092c96b38d429e98d9f1
 
 COCOAPODS: 1.4.0

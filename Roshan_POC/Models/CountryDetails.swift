@@ -8,12 +8,11 @@
 
 import Foundation
 
-struct CountryDetails:Codable {
-    var title:String?
-    var description:String?
-    var imageHref:String?
-    
-    enum CodingKeys: String,CodingKey {
+struct CountryDetails: Codable {
+    var title: String?
+    var description: String?
+    var imageHref: String?
+    enum CodingKeys: String, CodingKey {
         case title
         case description
         case imageHref
