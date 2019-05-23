@@ -16,10 +16,8 @@ class CountryDetailViewModel: NSObject {
     }
 
     var descriptionText: NSAttributedString {
-
         let descriptionString = countryDetail?.description ?? "NA"
-        let attributes: [NSAttributedStringKey: Any] = [ .font: UIFont.systemFont(ofSize: 18.0),
-                                                           .foregroundColor: UIColor.black]
+        let attributes: [NSAttributedStringKey: Any] = [ .font: UIFont.systemFont(ofSize: 18.0), .foregroundColor: UIColor.black]
 
         let descriptionAttributedString =  NSMutableAttributedString.init(string: descriptionString, attributes: attributes)
 

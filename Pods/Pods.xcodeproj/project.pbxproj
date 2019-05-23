@@ -15,7 +15,6 @@
 		0885455B775E45437DAB49EE264F1A16 /* PINButton+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB50F9B2A7DC202EB60D3BF704870CA0 /* PINButton+PINRemoteImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0F1EF6DA45F047D57F1F477C89CEE332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4148081AFF2D2211E5D2292B34B7E1C2 /* Foundation.framework */; };
 		0F526B4796D97DC130E5CBF6A5D7E5A5 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2B5B7AC678F47AAD48014DDB79D4DE /* SVProgressAnimatedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		10ED3B3CE84EA51ED29DE1405FF6E04E /* Pods-Roshan_POCTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42D7F8861BB86BA486B147925134394 /* Pods-Roshan_POCTests-dummy.m */; };
 		1424BD521CCAD9DDEDC71C50A0578029 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCBE4E64C854451A8C31049E998BE54 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14CECE238604E1D44104E5BCD14EB2BE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA73DA23D0C4364326598479F2BDBC /* SessionDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		164781197625A3149B3BDBCAA2AC8CC3 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A924DA004A4E19A6F7837B9A37F1C /* Validation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -44,8 +43,8 @@
 		5F2C51030CB95C0B94B061003650487F /* FLAnimatedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574C9AB4C296C2CFF584D1FA44E4F632 /* FLAnimatedImage.framework */; };
 		5FFED41CB01191CF0E43FCA74931A085 /* PINProgressiveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4164E801AC40DA7A941EEF5BC0878 /* PINProgressiveImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		62F1FA5E9A217A8A7C8561D813B51D5C /* FLAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EBA6E4B4EFA8C76CB90D1DA7DC1FFD /* FLAnimatedImageView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		650E64D6CBB7A0502A4B8CA24CDBB24A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4148081AFF2D2211E5D2292B34B7E1C2 /* Foundation.framework */; };
 		6540CC4D369A32F6DE54AFA8D5D6FAF9 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8278DDB50A43FA4F7AD463D0B4A8319 /* Alamofire-dummy.m */; };
+		6866707A2B1CD5FCBB8DAA39864A72E4 /* Pods-Roshan_POCTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB942C10C8DDDF96D408D47FCAC6B0E5 /* Pods-Roshan_POCTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		68A966DC9FE75F46B517A0A01458F0DD /* PINCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F5B3B090B1D824C56ADB93BDA00B5 /* PINCache-dummy.m */; };
 		6AA6FAB5EE785E7627683168CE50C4B6 /* PINButton+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EDBCB5741B21CB3F00E885E8F7034882 /* PINButton+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6ADBA2C332A2BF5C317AA15EE609B8CC /* PINRemoteImageCategoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 210440EFF0F3E763A202B8301906226D /* PINRemoteImageCategoryManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,7 +61,6 @@
 		7E889502F35FF85E11ED63D55EB17FF4 /* Pods-Roshan_POC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD92F58363FF04CEC33170DD4F1582A7 /* Pods-Roshan_POC-dummy.m */; };
 		7F9BB1FC5AC7617C0D161A64A1021BE9 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0D20974925FB1656990A4BEDC8BA26 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8274ECC0ADE7E44505225FF69818D9F2 /* PINMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A55FDE2A09A83AF15AAE50CCC27290FB /* PINMemoryCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		83117CD0F5892C3687A78D9299ACE9F5 /* Pods-Roshan_POCTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB942C10C8DDDF96D408D47FCAC6B0E5 /* Pods-Roshan_POCTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		879F3C72BF6A5122BA70CAEEDDC5B845 /* FLAnimatedImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E9D7A03739F169C4293EFE6C8B0DEBA /* FLAnimatedImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8B2501C9FA5FCDE6070FED72C412DF38 /* PINDataTaskOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC9EB892DA362515B59B434290951FA /* PINDataTaskOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C91FEF912E94A00FD72A53AAF6CEA62 /* FLAnimatedImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 006F5C396E1F9B9DA5D7CCBD71DD39D2 /* FLAnimatedImage-dummy.m */; };
@@ -85,6 +83,7 @@
 		AD2C576F50E67B2417C1D17FBF5E32B2 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC52B1671E016D9FE183FA2AFDF0EC /* AFError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B00EC20A95367E3634CC70121385F419 /* PINCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A0128AD95B180A5B2A1D172634F2C73 /* PINCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2D3A41BC0CC5A6941DA65F50043220F /* NSData+ImageDetectors.h in Headers */ = {isa = PBXBuildFile; fileRef = D8A093309E0F50DAE685936E7E9A657C /* NSData+ImageDetectors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4090E9A59B852D0FD86D2DD93A6C28D /* Pods-Roshan_POCTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42D7F8861BB86BA486B147925134394 /* Pods-Roshan_POCTests-dummy.m */; };
 		B677DD50E1B53D40724B99801082C48B /* Pods-Roshan_POCUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05099A163D7C7C6D746AA629D066D733 /* Pods-Roshan_POCUITests-dummy.m */; };
 		B76EDCDD91E9B920744B3DEFB5E14C49 /* PINCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 273924CAE388F81ADD3A0CF9B369C698 /* PINCache.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B9310487313EC6DFB9D38678AE23C428 /* PINRemoteImageProcessorTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C44DEFD5E43143680261DF902750FFC /* PINRemoteImageProcessorTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,11 +111,19 @@
 		ED63BDC498076E83EF8DC9F2329E07EC /* FLAnimatedImageView+PINRemoteImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 952876218EEB12CEE2180027BF2819E3 /* FLAnimatedImageView+PINRemoteImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F07A9C84113EB34ABE6E9E9834654D40 /* NSData+ImageDetectors.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A74BCF27818E3DE66E2273CCC0E0A6 /* NSData+ImageDetectors.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F1AEBE4E3F419ED02A2CA675F3EB9A6C /* FLAnimatedImageView+PINRemoteImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 38129D374CC6DB1529F3166718367EAD /* FLAnimatedImageView+PINRemoteImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F30B1449AAEBB1FCF9F06D6841DDA1F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4148081AFF2D2211E5D2292B34B7E1C2 /* Foundation.framework */; };
 		F80C0CA9C88CE9118FD9D0BACE6E65AA /* PINRemoteImageManagerResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F5870A9B3A505F01F23052737A5D2166 /* PINRemoteImageManagerResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F81A6B974B5E5940139045FB35A0249C /* PINRemoteImageDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD69F09BE3F59E8536B6507D6D81FFA /* PINRemoteImageDownloadTask.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0C74AB6861A5B375EB4C2AB2DFFB4018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83B5B60C676A8D31829A6AE91CE86A75;
+			remoteInfo = FLAnimatedImage;
+		};
 		39D59F3BC5620B0D5BCC8EDF83710E67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -144,6 +151,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = FB26C52B85B7E9C7FB1012DB095B7E90;
 			remoteInfo = SVProgressHUD;
+		};
+		B9D6CB3BD94BFA0F3D3FA06754A5EFEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A4878A4A87B118BAF0877A103373708;
+			remoteInfo = PINCache;
+		};
+		CF476137E3B1668CB8EE7639CA4B7FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02EE1452A6B9ED8895E739554320B81;
+			remoteInfo = PINRemoteImage;
 		};
 		E4111D6CFEC5F1FE1578B8D560286D38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -376,11 +397,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFF43F18BC6C51DD608386A5401A02CC /* Frameworks */ = {
+		A5764F9FAC3F4EEF217207A7C5C86730 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650E64D6CBB7A0502A4B8CA24CDBB24A /* Foundation.framework in Frameworks */,
+				F30B1449AAEBB1FCF9F06D6841DDA1F2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +770,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		09402B1AF6355BA39D0C59A1A2F82DAD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6866707A2B1CD5FCBB8DAA39864A72E4 /* Pods-Roshan_POCTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		68FD51420C7A9852A9D399F5075550B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -783,14 +812,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E1253964BC29469C5A1E3089B8E03DF /* Pods-Roshan_POCUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB3AE873A652850D217453AE930EEEC7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83117CD0F5892C3687A78D9299ACE9F5 /* Pods-Roshan_POCTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,17 +889,20 @@
 			productReference = 26156E733D74ADEEEE774B2DE523517E /* Pods_Roshan_POC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3F13135E5A91CBDD339989D0019CCCFC /* Pods-Roshan_POCTests */ = {
+		5321235FB435EF4FCD7026F9226F2764 /* Pods-Roshan_POCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD69FEB8A02F064B4F6193896054F17E /* Build configuration list for PBXNativeTarget "Pods-Roshan_POCTests" */;
+			buildConfigurationList = E8BDA37D02B3EFA93C6E635BA657383F /* Build configuration list for PBXNativeTarget "Pods-Roshan_POCTests" */;
 			buildPhases = (
-				0D5EFDAE4009E6224E325394FA56A713 /* Sources */,
-				AFF43F18BC6C51DD608386A5401A02CC /* Frameworks */,
-				DB3AE873A652850D217453AE930EEEC7 /* Headers */,
+				FE5262E3BCE0C4094024BEBC3881E206 /* Sources */,
+				A5764F9FAC3F4EEF217207A7C5C86730 /* Frameworks */,
+				09402B1AF6355BA39D0C59A1A2F82DAD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B81238C371E9C01EB18DC1AD757CE351 /* PBXTargetDependency */,
+				56B1FE153421DF28EE80254DB97A531F /* PBXTargetDependency */,
+				C763F02317F6F8C968AD20974741B113 /* PBXTargetDependency */,
 			);
 			name = "Pods-Roshan_POCTests";
 			productName = "Pods-Roshan_POCTests";
@@ -1016,7 +1040,7 @@
 				6A4878A4A87B118BAF0877A103373708 /* PINCache */,
 				A02EE1452A6B9ED8895E739554320B81 /* PINRemoteImage */,
 				317EA744EF71CEBD9117CF60941E8A6B /* Pods-Roshan_POC */,
-				3F13135E5A91CBDD339989D0019CCCFC /* Pods-Roshan_POCTests */,
+				5321235FB435EF4FCD7026F9226F2764 /* Pods-Roshan_POCTests */,
 				857937D9EB4C368BDC6A10EBBEFCE721 /* Pods-Roshan_POCUITests */,
 				FB26C52B85B7E9C7FB1012DB095B7E90 /* SVProgressHUD */,
 			);
@@ -1043,14 +1067,6 @@
 				B76EDCDD91E9B920744B3DEFB5E14C49 /* PINCache.m in Sources */,
 				4B90D9CFC1CC5FCFEAE42D3B458570EF /* PINDiskCache.m in Sources */,
 				8274ECC0ADE7E44505225FF69818D9F2 /* PINMemoryCache.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0D5EFDAE4009E6224E325394FA56A713 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10ED3B3CE84EA51ED29DE1405FF6E04E /* Pods-Roshan_POCTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1142,6 +1158,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE5262E3BCE0C4094024BEBC3881E206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4090E9A59B852D0FD86D2DD93A6C28D /* Pods-Roshan_POCTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1157,6 +1181,12 @@
 			target = 83B5B60C676A8D31829A6AE91CE86A75 /* FLAnimatedImage */;
 			targetProxy = 39D59F3BC5620B0D5BCC8EDF83710E67 /* PBXContainerItemProxy */;
 		};
+		56B1FE153421DF28EE80254DB97A531F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINCache;
+			target = 6A4878A4A87B118BAF0877A103373708 /* PINCache */;
+			targetProxy = B9D6CB3BD94BFA0F3D3FA06754A5EFEA /* PBXContainerItemProxy */;
+		};
 		6F418D58A130EFDB4DB3D6774D448249 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PINCache;
@@ -1169,11 +1199,23 @@
 			target = 83B5B60C676A8D31829A6AE91CE86A75 /* FLAnimatedImage */;
 			targetProxy = 50FA66EEBBCC1BAED66900FE91C6A0C0 /* PBXContainerItemProxy */;
 		};
+		B81238C371E9C01EB18DC1AD757CE351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLAnimatedImage;
+			target = 83B5B60C676A8D31829A6AE91CE86A75 /* FLAnimatedImage */;
+			targetProxy = 0C74AB6861A5B375EB4C2AB2DFFB4018 /* PBXContainerItemProxy */;
+		};
 		BDA26DD817643B659E6614DF1AEB2162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PINCache;
 			target = 6A4878A4A87B118BAF0877A103373708 /* PINCache */;
 			targetProxy = 59E10718E9E92ACB9D8A189E0CEC5DEF /* PBXContainerItemProxy */;
+		};
+		C763F02317F6F8C968AD20974741B113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PINRemoteImage;
+			target = A02EE1452A6B9ED8895E739554320B81 /* PINRemoteImage */;
+			targetProxy = CF476137E3B1668CB8EE7639CA4B7FA6 /* PBXContainerItemProxy */;
 		};
 		C96D9151FB22AF8F32868B9E8335099C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1407,7 +1449,101 @@
 			};
 			name = Debug;
 		};
-		73BB83C6E25321858216E5ACC28146C2 /* Release */ = {
+		740358F47F357544D60CDA1B0CDFFCB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A6DE71E8D35C5678D6665B007F2717 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88D8C80E7582DE4701246221B287699B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292AFAC2A9C845910DFAD1B1A5065069 /* Pods-Roshan_POCTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Roshan_POCTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Roshan_POCTests/Pods-Roshan_POCTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Roshan_POCTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DC1B9C74599BC192F8887282581D94B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD6B823A6B10645637FA9729DA79ACD /* PINCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PINCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PINCache/PINCache.modulemap";
+				PRODUCT_NAME = PINCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A00B9D94717CC53B7033E9E87455F85C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EA5A711B96F807E9AC5A9EA70D3B1BA /* Pods-Roshan_POCTests.release.xcconfig */;
 			buildSettings = {
@@ -1440,100 +1576,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		740358F47F357544D60CDA1B0CDFFCB0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6A6DE71E8D35C5678D6665B007F2717 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8DC1B9C74599BC192F8887282581D94B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD6B823A6B10645637FA9729DA79ACD /* PINCache.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PINCache/PINCache-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PINCache/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PINCache/PINCache.modulemap";
-				PRODUCT_NAME = PINCache;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		955900EA97441A6ADE6427AA9134D9A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 292AFAC2A9C845910DFAD1B1A5065069 /* Pods-Roshan_POCTests.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Roshan_POCTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Roshan_POCTests/Pods-Roshan_POCTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Roshan_POCTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		A3C36F41799DACB6A09A7190A5996158 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1870,11 +1912,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD69FEB8A02F064B4F6193896054F17E /* Build configuration list for PBXNativeTarget "Pods-Roshan_POCTests" */ = {
+		E8BDA37D02B3EFA93C6E635BA657383F /* Build configuration list for PBXNativeTarget "Pods-Roshan_POCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				955900EA97441A6ADE6427AA9134D9A2 /* Debug */,
-				73BB83C6E25321858216E5ACC28146C2 /* Release */,
+				88D8C80E7582DE4701246221B287699B /* Debug */,
+				A00B9D94717CC53B7033E9E87455F85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

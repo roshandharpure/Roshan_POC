@@ -42,6 +42,7 @@ class CountryView: UIViewController {
 
     func setupViews() {
         view.backgroundColor = UIColor.white
+        // Tableview setup
         tableView = UITableView.init(frame: view.bounds)
         tableView?.separatorStyle = UITableViewCellSeparatorStyle.none
         tableView?.delegate = self
@@ -50,6 +51,8 @@ class CountryView: UIViewController {
         tableView?.clipsToBounds = true
         tableView?.rowHeight = UITableViewAutomaticDimension
         tableView?.estimatedRowHeight = 44.0
+        //Setup for XCUITests
+        tableView?.accessibilityIdentifier = "table--countryDetailTableView"
         tableView?.register(DetailCell.self, forCellReuseIdentifier: detailCellId)
 
         //Add refresh control for pull to refresh purpose
@@ -87,6 +90,7 @@ class CountryView: UIViewController {
             self.countryData = countryData
         }
     }
+
     func updateView() {
         self.title = self.countryViewModel?.title
         self.tableView?.reloadData()

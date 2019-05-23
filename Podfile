@@ -13,6 +13,7 @@ target 'Roshan_POC' do
   
   target 'Roshan_POCTests' do
     inherit! :search_paths
+    pod 'PINRemoteImage'
     # Pods for testing
   end
 

@@ -11,11 +11,11 @@ import UIKit
 class CountryViewModel: NSObject {
     var countryData: Country?
     var title: String? {
-        return countryData?.title
+        return countryData?.title ?? "NA"
     }
 
     var details: [CountryDetails]? {
-        return countryData?.details
+        return countryData?.details ?? []
     }
 
     init(country: Country?) {

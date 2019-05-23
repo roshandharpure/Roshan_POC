@@ -13,7 +13,6 @@ class DetailCell: UITableViewCell {
     var lblTitle: UILabel!
     var lblDescription: UILabel!
     var imgRefrenceView: UIImageView!
-    var cardView: UIView?
     var countryDetailViewModel: CountryDetailViewModel? {
         didSet {
             lblTitle.text = countryDetailViewModel?.titleText
