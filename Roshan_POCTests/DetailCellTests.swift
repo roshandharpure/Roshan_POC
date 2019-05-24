@@ -27,9 +27,9 @@ class DetailCellTests: XCTestCase {
     }
 
     func testCellTitleReturnProperValue() {
-       XCTAssertEqual(cell?.lblTitle.text!, countryDetailViewModel?.titleText, "Detail cell title lable text must be equal to view Model's title text")
+        XCTAssertEqual(cell?.lblTitle.text!, countryDetailViewModel?.titleText, "Detail cell title lable text must be equal to view Model's title text")
 
-       XCTAssertEqual(cell?.lblDescription.attributedText!, countryDetailViewModel?.descriptionText, "Detail cell description lable text must be equal to view Model's description text")
+        XCTAssertEqual(cell?.lblDescription.attributedText!, countryDetailViewModel?.descriptionText, "Detail cell description lable text must be equal to view Model's description text")
 
     }
 

@@ -36,8 +36,8 @@ class CountryView: UIViewController {
 
     //View LifeCycle
     override func viewWillAppear(_ animated: Bool) {
-       SVProgressHUD.show()
-       self.fetchData()
+        SVProgressHUD.show()
+        self.fetchData()
     }
 
     func setupViews() {

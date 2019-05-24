@@ -16,7 +16,7 @@ class CountryDetailViewModelTests: XCTestCase {
     override func setUp() {
         super.setUp()
         //Test with empty model
-         countryDetails = CountryDetails.init(title: nil, description: nil, imageHref: nil)
+        countryDetails = CountryDetails.init(title: nil, description: nil, imageHref: nil)
 
         //Test with model
         //countryDetails = CountryDetails.init(title: "America", description: "nice to visit", imageHref: "")
