@@ -28,7 +28,7 @@ class CountryViewModelTests: XCTestCase {
         super.tearDown()
     }
 
-    func testInitializationWithEmptyModel() {
+    func testInitialization() {
 
         XCTAssertNotNil(countryViewModel, "The country view model should not be nil.")
 
